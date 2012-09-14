@@ -9,7 +9,8 @@ Mutant is ideal in situations where updating an in-memeory object can take a whi
 The performance cost of using Mutant will only really be noticed when the object is expensive to 'dup'.  There will also be a slight performance hit as Mutant uses a Mutex to ensure thread-safety, which is common in most threadsafe libraries.
 
 Example:
-    
+
+```ruby
 class Counter
   
   attr_reader :counter
@@ -36,5 +37,4 @@ t = Thread.new do
 end
 
 t.join
-
-counter[:key].counter.should == 100
+```
