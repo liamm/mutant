@@ -1,5 +1,6 @@
+=======
 Mutant
-------
+======
 
 The aim of Mutant is to provide a threadsafe layer on top of various Ruby collections by introducing an object accessor that provides a read-only immutable copy of any given object.
 
